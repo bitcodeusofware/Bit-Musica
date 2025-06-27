@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player">
+            <div class="album-art">
+                <img id="cover" src="https://via.placeholder.com/300" alt="Portada del álbum">
+            </div>
+            
+            <div class="song-info">
+                <h2 id="song-title">Canción</h2>
+                <p id="artist">Artista</p>
+            </div>
+            
+            <audio id="audio-player"></audio>
+            
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0">
+                <span id="duration">0:00</span>
+            </div>
+            
+            <div class="controls">
+                <button id="prev-btn"><i class="fas fa-step-backward"></i></button>
+                <button id="play-btn"><i class="fas fa-play"></i></button>
+                <button id="next-btn"><i class="fas fa-step-forward"></i></button>
+                <button id="shuffle-btn"><i class="fas fa-random"></i></button>
+                <button id="repeat-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            
+            <div class="playlist-container">
+                <h3><i class="fas fa-list"></i> Lista de reproducción</h3>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar canción...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <ul id="playlist"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

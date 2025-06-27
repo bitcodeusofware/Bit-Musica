@@ -1,0 +1,279 @@
+// Lista de canciones (puedes agregar más)
+const songs = [
+    {
+        title: "oh mi Angel",
+        artist: "Artista 1",
+        src: "oh mi Angel.mp3",
+        cover: "https://i.scdn.co/image/ab67616d0000b273ce3f7a5726537f3fd14f2188",
+        duration: "2:18"
+    },
+    {
+        title: "Travis Scott",
+        artist: "Artista 2",
+        src: "travis.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpVgByNdbDntccUbO5tWmaVCCGVm_EPlCx8w&s",
+        duration: "4:12"
+       
+    },
+    {
+        title: "November South",
+        artist: "Artista 3",
+        src: "Our Father’s Sins (Official Lyric Video) - November South.mp3",
+        cover: "https://i.scdn.co/image/ab676161000051746c08d788686ad7b2f84d9800",
+        duration: "3:16"
+    },
+    {
+        title: "Noah Kahan",
+        artist: "Artista 4",
+        src: "Noah Kahan - You’re Gonna Go Far (Official Lyric Video) - NoahKahanVEVO.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR_kKJbSMfVMVm873vbzqFqokVjkpEG5aHvA&s",
+       duration: "4:46"
+    },
+    {
+        title: "Star Eater",
+        artist: "Artista 5",
+        src: "Star Eater - Daniel Deluxe.mp3 ",
+        cover: "https://cdn-images.dzcdn.net/images/cover/80acb36159cb75f910d44155a0b5df98/500x500-000000-80-0-0.jpg",
+       duration: "4:32"
+    },
+    {
+        title: "VEKI VEKI",
+        artist: "Artista 6",
+        src: "VEKI VEKI (Slowed) - DJZRX.mp3 ",
+        cover: "https://i.ytimg.com/vi/rpSe5mCdj4k/maxresdefault.jpg",
+       duration: "1:34"
+    },
+    {
+        title: "BigBoa",
+        artist: "Artista 7",
+        src: "Long Distance - BigBoa.mp3 ",
+        cover: "https://i.ytimg.com/vi/7xrwTlPEN5I/0.jpg",
+       duration: "1:57"
+    },
+    {
+        title: "Dream, Ivory",
+        artist: "Artista 8",
+        src: "Dream, Ivory - Welcome and Goodbye - David Dean Burkhart.mp3 ",
+        cover: "https://i.ytimg.com/vi/4J0eu55kYWY/0.jpg",
+       duration: "2:21"
+    },
+    {
+        title: "Kirin J Callinan",
+        artist: "Artista 9",
+        src: "Kirin J Callinan - Big Enough (feat. Alex Cameron) - TERRIBLE RECORDS.mp3 ",
+        cover: "https://i.ytimg.com/vi/L6RsYvaGAIo/0.jpg",
+       duration: "4:44"
+    },
+    {
+        title: "magic - Medasin",
+        artist: "Artista 10",
+        src: "magic - Medasin.mp3 ",
+        cover: "https://i.ytimg.com/vi/9ytiyD_QA2s/0.jpg",
+       duration: "5:57"
+    },
+    {
+        title: "Ark Patrol - Let Go",
+        artist: "Artista 11",
+        src: "Ark Patrol - Let Go (feat. Veronika Redd) - MrSuicideSheep.mp3 ",
+        cover: "https://i.ytimg.com/vi/Ts5ZiojkOe4/0.jpg",
+       duration: "4:08"
+    },
+    // Agrega más canciones según necesites
+];
+
+// Elementos del DOM
+const audioPlayer = document.getElementById('audio-player');
+const playBtn = document.getElementById('play-btn');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const shuffleBtn = document.getElementById('shuffle-btn');
+const repeatBtn = document.getElementById('repeat-btn');
+const progressBar = document.getElementById('progress-bar');
+const currentTimeEl = document.getElementById('current-time');
+const durationEl = document.getElementById('duration');
+const songTitle = document.getElementById('song-title');
+const artistEl = document.getElementById('artist');
+const coverEl = document.getElementById('cover');
+const playlistEl = document.getElementById('playlist');
+const searchInput = document.getElementById('search-input');
+const searchBtn = document.getElementById('search-btn');
+
+// Variables de estado
+let currentSongIndex = 0;
+let isPlaying = false;
+let isShuffled = false;
+let isRepeated = false;
+let originalPlaylist = [...songs];
+let currentPlaylist = [...songs];
+
+// Inicializar el reproductor
+function initPlayer() {
+    loadSong(currentPlaylist[currentSongIndex]);
+    renderPlaylist();
+}
+
+// Cargar canción
+function loadSong(song) {
+    songTitle.textContent = song.title;
+    artistEl.textContent = song.artist;
+    coverEl.src = song.cover;
+    audioPlayer.src = song.src;
+    durationEl.textContent = song.duration;
+    
+    // Actualizar la clase 'playing' en la lista
+    updatePlayingClass();
+}
+
+// Reproducir canción
+function playSong() {
+    isPlaying = true;
+    audioPlayer.play();
+    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+    document.querySelector('.player').classList.add('playing');
+}
+
+// Pausar canción
+function pauseSong() {
+    isPlaying = false;
+    audioPlayer.pause();
+    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+    document.querySelector('.player').classList.remove('playing');
+}
+
+// Siguiente canción
+function nextSong() {
+    currentSongIndex = (currentSongIndex + 1) % currentPlaylist.length;
+    loadSong(currentPlaylist[currentSongIndex]);
+    if (isPlaying) playSong();
+}
+
+// Canción anterior
+function prevSong() {
+    currentSongIndex = (currentSongIndex - 1 + currentPlaylist.length) % currentPlaylist.length;
+    loadSong(currentPlaylist[currentSongIndex]);
+    if (isPlaying) playSong();
+}
+
+// Barra de progreso
+function updateProgress() {
+    const { currentTime, duration } = audioPlayer;
+    const progressPercent = (currentTime / duration) * 100;
+    progressBar.value = progressPercent;
+    
+    // Formatear tiempo
+    const currentMinutes = Math.floor(currentTime / 60);
+    const currentSeconds = Math.floor(currentTime % 60).toString().padStart(2, '0');
+    currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`;
+}
+
+// Establecer progreso
+function setProgress(e) {
+    const width = this.clientWidth;
+    const clickX = e.offsetX;
+    const duration = audioPlayer.duration;
+    audioPlayer.currentTime = (clickX / width) * duration;
+}
+
+// Renderizar lista de reproducción
+function renderPlaylist() {
+    playlistEl.innerHTML = '';
+    currentPlaylist.forEach((song, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <span>${song.title} - ${song.artist}</span>
+            <span class="song-duration">${song.duration}</span>
+        `;
+        li.addEventListener('click', () => {
+            currentSongIndex = index;
+            loadSong(song);
+            playSong();
+        });
+        playlistEl.appendChild(li);
+    });
+    updatePlayingClass();
+}
+
+// Actualizar clase 'playing' en la lista
+function updatePlayingClass() {
+    const items = playlistEl.querySelectorAll('li');
+    items.forEach((item, index) => {
+        if (index === currentSongIndex) {
+            item.classList.add('playing');
+        } else {
+            item.classList.remove('playing');
+        }
+    });
+}
+
+// Barajar lista
+function shufflePlaylist() {
+    isShuffled = !isShuffled;
+    shuffleBtn.style.color = isShuffled ? '#1db954' : 'white';
+    
+    if (isShuffled) {
+        currentPlaylist = [...originalPlaylist].sort(() => Math.random() - 0.5);
+    } else {
+        currentPlaylist = [...originalPlaylist];
+    }
+    
+    // Encontrar la canción actual en la nueva lista
+    const currentSong = originalPlaylist[currentSongIndex];
+    currentSongIndex = currentPlaylist.findIndex(song => 
+        song.title === currentSong.title && song.artist === currentSong.artist);
+    
+    renderPlaylist();
+}
+
+// Repetir canción
+function toggleRepeat() {
+    isRepeated = !isRepeated;
+    repeatBtn.style.color = isRepeated ? '#1db954' : 'white';
+}
+
+// Buscar canción
+function searchSong() {
+    const searchTerm = searchInput.value.toLowerCase();
+    if (searchTerm === '') {
+        currentPlaylist = [...originalPlaylist];
+    } else {
+        currentPlaylist = originalPlaylist.filter(song => 
+            song.title.toLowerCase().includes(searchTerm) || 
+            song.artist.toLowerCase().includes(searchTerm)
+        );
+    }
+    renderPlaylist();
+}
+
+// Event listeners
+playBtn.addEventListener('click', () => {
+    isPlaying ? pauseSong() : playSong();
+});
+
+nextBtn.addEventListener('click', nextSong);
+prevBtn.addEventListener('click', prevSong);
+
+audioPlayer.addEventListener('timeupdate', updateProgress);
+audioPlayer.addEventListener('ended', () => {
+    if (isRepeated) {
+        audioPlayer.currentTime = 0;
+        playSong();
+    } else {
+        nextSong();
+    }
+});
+
+progressBar.addEventListener('input', (e) => {
+    const seekTime = (e.target.value / 100) * audioPlayer.duration;
+    audioPlayer.currentTime = seekTime;
+});
+
+shuffleBtn.addEventListener('click', shufflePlaylist);
+repeatBtn.addEventListener('click', toggleRepeat);
+
+searchBtn.addEventListener('click', searchSong);
+searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') searchSong();
+});
+
+// Inicializar
+initPlayer();
