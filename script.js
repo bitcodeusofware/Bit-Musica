@@ -188,7 +188,7 @@ const songs = [
         title: " Solitude juno, blindheart",
         artist: "Artista 27",
         src: "juno, blindheart - Solitude - Kurate Music.mp3",
-        cover: "https://i.ytimg.com/vi/PlKB7yc_RwA/sddefault.jpg.jpg",
+        cover: "https://i.ytimg.com/vi/PlKB7yc_RwA/sddefault.jpg",
         duration: "2:32"
     },
     
