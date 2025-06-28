@@ -89,7 +89,7 @@ const songs = [
         title: "Charly Black",
         artist: "Artista 13",
         src: "Charly Black - You're Perfect (Official Video) - CharlyBlackVEVO.mp3",
-        cover: "https://yt3.googleusercontent.com/HLko2I8mNC1ubHCbdP2Lq4aEAl1wKqDKLJzTDaLTCA-ouhoIjEm0jUUPDR36SDxx_18B8RHMEw=s900-c-k-c0x00ffffff-no-rj.jpg",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2kl-qeWBsBcrmEDYPBNEdupunGScGh6ZEg&s.jpg",
         duration: "3:19"
     },
     {
@@ -106,6 +106,50 @@ const songs = [
         cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-vTNfq7qN-RHIrA_AfdnrIrhTTr6deVpkfw&s.jpg",
         duration: "2:38"
     },
+    {
+        title: "ABBA - Dancing Queen",
+        artist: "Artista 16",
+        src: "ABBA - Dancing Queen (Official Music Video) - AbbaVEVO.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk9N29Tpr3oSSjJflNzbqlkQ4o9pNg6ygn1Q&s.jpg",
+        duration: "3:53"
+    },
+    {
+        title: "Hozier - From Eden",
+        artist: "Artista 17",
+        src: "Hozier - From Eden - Hozier.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJAXJUIi2ftGOmTWOMsI7eol0PZCzP5XtlRA&s.jpg",
+        duration: "3:43"
+    },
+    {
+        title: "Kyle Dixon",
+        artist: "Artista 18",
+        src: "Kyle Dixon & Michael Stein - Kids - Intensive Drops Network.mp3",
+        cover: "https://i.ytimg.com/vi/Ha2OcL_0gtM/sddefault.jpg",
+        duration: "2:38"
+    },
+    {
+        title: "PASTEL GHOST",
+        artist: "Artista 19",
+        src: "PASTEL GHOST _ IRIS - PASTEL GHOST.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb7nhKx6SjVOqB0my8ByW19Kr11T-CS0E7IA&s.jpg",
+        duration: "3:38"
+    },
+    {
+        title: "She Is - The Fray",
+        artist: "Artista 20",
+        src: "She Is - The Fray.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrxjTkqpE7Slpr78xS7iZBLhmtljj901VAug&s.jpg",
+        duration: "3:57"
+    },
+   
+    {
+        title: "Memory Reboot",
+        artist: "Artista 21",
+        src: "VØJ, Narvent - Memory Reboot (4K Music Video) - Narvent.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpwocosrgaBuJEX92vPBC1cermuzyy-NyJ7g&s.jpg",
+        duration: "3:57"
+    },
+    
     // Agrega más canciones según necesites
 ];
 
