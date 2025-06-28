@@ -6,22 +6,28 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1e1e2f, #2a2a3a);
+    background: url(https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg);
     color: #fff;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
 }
 
 .player-container {
     width: 90%;
     max-width: 400px;
-    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    background-position: center;
+    background-size: cover;
 }
 
 .album-art {
@@ -137,9 +143,13 @@ body {
 }
 
 .playlist-container {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    background: url(https://images.unsplash.com/photo-1567787609897-efa3625dd22d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bXVzaWMlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D);
+    border-radius: 10px ;
     padding: 15px;
+   border: transparent;
+   margin: 0;
+   background-position: center;
+   background-size: cover;
 }
 
 .playlist-container h3 {
@@ -156,11 +166,10 @@ body {
 
 #search-input {
     flex-grow: 1;
-    background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 20px;
     padding: 8px 15px;
-    color: white;
+    color: rgb(66, 61, 61);
     outline: none;
 }
 
