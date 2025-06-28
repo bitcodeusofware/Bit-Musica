@@ -166,13 +166,18 @@ body {
 
 #search-input {
     flex-grow: 1;
-    border: none;
-    border-radius: 20px;
+    border: 1px solid  rgb(236, 226, 226);
+    border-radius: 20px ;
     padding: 8px 15px;
-    color: rgb(66, 61, 61);
-    outline: none;
+    color: #ffff;
+    outline:none;
+    background: transparent;
+   
 }
-
+#search-input:hover{
+    background: #fff;
+    color: rgb(17, 17, 17);
+}
 #search-btn {
     background: none;
     border: none;
@@ -189,10 +194,11 @@ body {
 
 #playlist::-webkit-scrollbar {
     width: 5px;
+
 }
 
 #playlist::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgb(172, 136, 136);
     border-radius: 5px;
 }
 
