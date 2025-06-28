@@ -78,6 +78,34 @@ const songs = [
         cover: "https://i.ytimg.com/vi/Ts5ZiojkOe4/0.jpg",
        duration: "4:08"
     },
+    {
+        title: "BIOS - Zorrovian",
+        artist: "Artista 12",
+        src: "BIOS - Zorrovian [Official Visualiser] - Zorrovian.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0sgJ-M5rQ6krNGSSdXqcNX4Bi06AueyLphA&s.jpg",
+        duration: "5:13"
+    },
+    {
+        title: "Charly Black",
+        artist: "Artista 13",
+        src: "Charly Black - You're Perfect (Official Video) - CharlyBlackVEVO.mp3",
+        cover: "https://yt3.googleusercontent.com/HLko2I8mNC1ubHCbdP2Lq4aEAl1wKqDKLJzTDaLTCA-ouhoIjEm0jUUPDR36SDxx_18B8RHMEw=s900-c-k-c0x00ffffff-no-rj.jpg",
+        duration: "3:19"
+    },
+    {
+        title: "Suffocation x Goth (mashup)",
+        artist: "Artista 14",
+        src: "Suffocation x Goth (mashup) - Crystals Castles and Sidewalks and Skeletons - Just chill.mp3",
+        cover: "https://i.ytimg.com/vi/Fw2fMqw9Q1w/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGCYgXih_MA8=&rs=AOn4CLBws2Dn6bi17ZA8PFDJHUDRU69JHQ.jpg",
+        duration: "3:12"
+    },
+    {
+        title: "The Mamas & The Papas",
+        artist: "Artista 15",
+        src: "The Mamas & The Papas - California Dreamin' - Folk Experience.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-vTNfq7qN-RHIrA_AfdnrIrhTTr6deVpkfw&s.jpg",
+        duration: "2:38"
+    },
     // Agrega más canciones según necesites
 ];
 
