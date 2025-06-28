@@ -149,6 +149,48 @@ const songs = [
         cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpwocosrgaBuJEX92vPBC1cermuzyy-NyJ7g&s.jpg",
         duration: "3:57"
     },
+    {
+        title: "David Guetta",
+        artist: "Artista 22",
+        src: "David Guetta & MORTEN - Never Be Alone (feat Aloe Blacc) - David Guetta.mp3",
+        cover: "https://m.media-amazon.com/images/I/41aMP8x0yjL._UXNaN_FMjpg_QL85_.jpg",
+        duration: "2:59"
+    },
+     {
+        title: "You Are the Woman ",
+        artist: "Artista 23",
+        src: "You Are the Woman - Firefall.mp3",
+        cover: "https://i.ytimg.com/vi/lakFEx_9cT4/hqdefault.jpg",
+        duration: "3:54"
+    },
+     {
+        title: "Heads Will Roll",
+        artist: "Artista 24",
+        src: "Heads Will Roll (A-Trak Remix) - Yeah Yeah Yeahs.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhHH39tl3Y8c2KVt6P-hW3FgCJS57DlWHj_Q&s.jpg",
+        duration: "6:24"
+    },
+     {
+        title: "Chris Brown",
+        artist: "Artista 25",
+        src: "Chris Brown - Girl You Loud (Lyrics) ft. Tyga - R&BHype.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK7R_o3bY0UaFXbCSeao2E9TJJs02SEgxVxw&s.jpg",
+        duration: "3:34"
+    },
+     {
+        title: "Armin van Buuren feat",
+        artist: "Artista 28",
+        src: "Armin van Buuren feat. Sharon den Adel - In And Out Of Love (Official Music Video) - Armada Music TV.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKtqNj5rR91l0fZ8BVCtDiYnS2lLRdJTsYMg&s.jpg",
+        duration: "3:08"
+    },
+     {
+        title: " Solitude juno, blindheart",
+        artist: "Artista 27",
+        src: "juno, blindheart - Solitude - Kurate Music.mp3",
+        cover: "https://i.ytimg.com/vi/PlKB7yc_RwA/sddefault.jpg.jpg",
+        duration: "2:32"
+    },
     
     // Agrega más canciones según necesites
 ];
