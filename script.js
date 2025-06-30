@@ -191,6 +191,70 @@ const songs = [
         cover: "https://i.ytimg.com/vi/PlKB7yc_RwA/sddefault.jpg",
         duration: "2:32"
     },
+     {
+        title: "Flawed Mangoes ",
+        artist: "Artista 28",
+        src: "Flawed Mangoes - Dramamine (Visualizer) - Flawed Mangoes.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM7Q98V-YGB6v2grlhLFelP8b08JKYKjTGDQ&s.jpg",
+        duration: "3:26"
+    },
+     {
+        title: " Pete Yorn",
+        artist: "Artista 29",
+        src: " Pete Yorn - Ever Fallen In Love - Pete Yorn.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYViGpQZPmPoYQmG9W4bDvn1HmlLf5qcyPPQ&s.jpg",
+        duration: "2:33"
+    },
+     {
+        title: "U Weren't Here ",
+        artist: "Artista 30",
+        src: "U Weren't Here I Really Miss You - Cult Member.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQWHQhcRPdee9Bn_xC7lVwd0d5sT2da3IZrg&s.jpg",
+        duration: "2:41"
+    },
+     {
+        title: " Phoebe Bridgers - Scott Street ",
+        artist: "Artista 31",
+        src: "Phoebe Bridgers - Scott Street (Official Video) - Phoebe Bridgers.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbawIKSU7hkCNyYj4v1tI0y3Ds3MgE-zofjw&s.jpg",
+        duration: "5:07"
+    },
+     {
+        title: " Me And You",
+        artist: "Artista 32",
+        src: "Me And You - Brenton Wood from the album Baby You Got It - The Bicycle Music Company.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdRFFmaFCMKby-hMoWxnboSjrvu6cE5gIjQA&s.jpg",
+        duration: "3:00"
+    },
+     {
+        title: " I'm God - Clams Casino",
+        artist: "Artista 33",
+        src: "I'm God - Clams Casino.mp3",
+        cover: "https://i.scdn.co/image/ab67616d0000b2739ae69c2c5802b7bb96df8832.jpg",
+        duration: "4:38"
+    },
+     {
+        title: " Mareux - Killer",
+        artist: "Artista 34",
+        src: "Mareux - Killer (Official Lyric Video) - Mareux.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTirTxlVjdpf-gRFV9X3Nd7KnRWGbQVJb9sMg&s.jpg",
+        duration: "3:04"
+    },
+     {
+        title: "Seve (Slow,
+        artist: "Artista 35",
+        src: "Seve (Slow Version) - Tez Cadey.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTcUKqujdeBpsqNVEvMIYiV3GdqJzKsM9xw&s.jpg",
+        duration: "5:34"
+    },
+     {
+        title: "Glass Animals",
+        artist: "Artista 36",
+        src: "Glass Animals - Heat Waves (Official Video) - GlassAnimalsVEVO.mp3",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJiENv-mRQNHg0vhUy_PLSwM0Rwdk2KPDvg&s.jpg",
+        duration: "3:56"
+    },
+
     
     // Agrega más canciones según necesites
 ];
