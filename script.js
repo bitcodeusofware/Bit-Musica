@@ -230,7 +230,7 @@ const songs = [
         title: " I'm God - Clams Casino",
         artist: "Artista 33",
         src: "I'm God - Clams Casino.mp3",
-        cover: "https://i.scdn.co/image/ab67616d0000b2739ae69c2c5802b7bb96df8832.jpg",
+        cover: "https://i.ytimg.com/vi/1Hoi9eVWLW0/mqdefault.jpg",
         duration: "4:38"
     },
      {
