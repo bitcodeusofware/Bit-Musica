@@ -241,7 +241,7 @@ const songs = [
         duration: "3:04"
     },
      {
-        title: "Seve (Slow,
+        title: "Seve (Slow",
         artist: "Artista 35",
         src: "Seve (Slow Version) - Tez Cadey.mp3",
         cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTcUKqujdeBpsqNVEvMIYiV3GdqJzKsM9xw&s.jpg",
