@@ -1,6 +1,8 @@
 // Lista de canciones (puedes agregar más)
 const songs = [ 
-
+title: "Let You Dowm", artist: "NF nathan", src: "NF - Let You Dowm - NFVEVO.mp3",  duration: "3:36",
+        cover: "",
+        background: ",
 
     }, {title: "PILLOWTALK", artist: "ZAYN", src: "ZAYN - PILLOWTALK (Official Video) - ZaynVEVO.mp3",  duration: "3:27",
         cover: "https://i.ytimg.com/vi/C_3d6GntKbk/maxresdefault.jpg",
