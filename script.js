@@ -1,9 +1,11 @@
 // Lista de canciones (puedes agregar más)
 const songs = [ 
-title: "Let You Dowm", artist: "NF nathan", src: "NF - Let You Dowm - NFVEVO.mp3",  duration: "3:36",
-        cover: "",
-        background: ",
-
+    {title: "Let You Down", artist: "NF nathan", src: "NF - Let You Down - NFVEVO.mp3",  duration: "3:36",
+        cover: "https://i1.sndcdn.com/artworks-P5LCkzVggC1g-0-t500x500.jpg",
+        background: "https://i1.sndcdn.com/artworks-P5LCkzVggC1g-0-t500x500.jpg",
+    }, {title: "Racing Hearts", artist: "Mattie Maguire", src: "Música de Tecnonauta  Racing Hearts- Mattie Maguire - StarUp.mp3",  duration: "3:01",
+        cover: "https://i1.sndcdn.com/artworks-NeKTV02HdHfj-0-t500x500.png",
+        background: "https://i1.sndcdn.com/artworks-NeKTV02HdHfj-0-t500x500.png",
     }, {title: "PILLOWTALK", artist: "ZAYN", src: "ZAYN - PILLOWTALK (Official Video) - ZaynVEVO.mp3",  duration: "3:27",
         cover: "https://i.ytimg.com/vi/C_3d6GntKbk/maxresdefault.jpg",
         background: "https://i.ytimg.com/vi/C_3d6GntKbk/maxresdefault.jpg",
