@@ -1,8 +1,7 @@
 // Lista de canciones (puedes agregar más)
 const songs = [ 
-    {title: "Racing Hearts", artist: "Mattie Maguire", src: "Música de Tecnonauta  Racing Hearts- Mattie Maguire - StarUp.mp3",  duration: "3:01",
-        cover: "https://i1.sndcdn.com/artworks-NeKTV02HdHfj-0-t500x500.png",
-        background: "https://i1.sndcdn.com/artworks-NeKTV02HdHfj-0-t500x500.png",
+
+
     }, {title: "PILLOWTALK", artist: "ZAYN", src: "ZAYN - PILLOWTALK (Official Video) - ZaynVEVO.mp3",  duration: "3:27",
         cover: "https://i.ytimg.com/vi/C_3d6GntKbk/maxresdefault.jpg",
         background: "https://i.ytimg.com/vi/C_3d6GntKbk/maxresdefault.jpg",
