@@ -1,6 +1,9 @@
 // Lista de canciones (puedes agregar más)
 const songs = [ 
-    {title: "Let You Down", artist: "NF nathan", src: "NF - Let You Down - NFVEVO.mp3",  duration: "3:36",
+   {title: "Wasy Love", artist: "sigala", src: "Sigala - Easy Love (Official Music Video) - SigalaVEVO.mp3",  duration: "2:58",
+        cover: "https://cdn-images.dzcdn.net/images/cover/70a99cdacd741665bf34c94da87f99e5/500x500.jpg",
+        background: "https://cdn-images.dzcdn.net/images/cover/70a99cdacd741665bf34c94da87f99e5/500x500.jpg",
+    }, {title: "Let You Down", artist: "NF nathan", src: "NF - Let You Down - NFVEVO.mp3",  duration: "3:36",
         cover: "https://i1.sndcdn.com/artworks-P5LCkzVggC1g-0-t500x500.jpg",
         background: "https://i1.sndcdn.com/artworks-P5LCkzVggC1g-0-t500x500.jpg",
     }, {title: "Racing Hearts", artist: "Mattie Maguire", src: "Música de Tecnonauta  Racing Hearts- Mattie Maguire - StarUp.mp3",  duration: "3:01",
