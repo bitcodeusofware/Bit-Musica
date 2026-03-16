@@ -447,4 +447,17 @@ font-size:16px;
             transform: translateY(0);
             opacity: 1;
         }
-       
+
+ .toggl-button{
+    order: 1;
+    padding: 7px 10px;
+    background: #0846f1;
+    color: white;
+    border-radius: 7px ;
+    cursor: pointer;
+    position: relative;
+    border:none;
+transition: all 0.3s;
+margin: 10px auto;
+font-size:16px;
+}
