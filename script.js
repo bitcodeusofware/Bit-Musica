@@ -1,6 +1,12 @@
 // Lista de canciones (puedes agregar más)
 const songs = [ 
-   {title: "Wasy Love", artist: "sigala", src: "Sigala - Easy Love (Official Music Video) - SigalaVEVO.mp3",  duration: "2:58",
+    {title: "The Kid LAROI", artist: "TheKidLAROIVEVO", src: "The Kid LAROI - NIGHTS LIKE THIS (Official Audio) - TheKidLAROIVEVO (1).mp3",  duration: "1:28",
+        cover: "https://th.bing.com/th/id/OIP.bFD9Alc2u02s31VJekwyEwHaE8?w=286&h=191&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+        background: "https://th.bing.com/th/id/OIP.bFD9Alc2u02s31VJekwyEwHaE8?w=286&h=191&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    },{title: "#doyalikeXre", artist: "Baby girl", src: "#doyalikeXre (Baby girl) - mikeeysmind.mp3",  duration: "3:04",
+        cover: "https://th.bing.com/th/id/OIP.YzQulK42ye2WjN77Y1oVqwHaEK?w=328&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+        background: "https://th.bing.com/th/id/OIP.YzQulK42ye2WjN77Y1oVqwHaEK?w=328&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    },{title: "Wasy Love", artist: "sigala", src: "Sigala - Easy Love (Official Music Video) - SigalaVEVO.mp3",  duration: "2:58",
         cover: "https://cdn-images.dzcdn.net/images/cover/70a99cdacd741665bf34c94da87f99e5/500x500.jpg",
         background: "https://cdn-images.dzcdn.net/images/cover/70a99cdacd741665bf34c94da87f99e5/500x500.jpg",
     }, {title: "Let You Down", artist: "NF nathan", src: "NF - Let You Down - NFVEVO.mp3",  duration: "3:36",
