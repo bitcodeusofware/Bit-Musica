@@ -28,7 +28,14 @@
                 <input type="range" id="progress-bar" value="0">
                 <span id="duration">0:00</span>
             </div>
-            
+             <div class="controls">
+                <button id="prev-btn"><i class="fas fa-step-backward"></i></button>
+                <button id="play-btn"><i class="fas fa-play"></i></button>
+                <button id="next-btn"><i class="fas fa-step-forward"></i></button>
+                <button id="shuffle-btn"><i class="fas fa-random"></i></button>
+                <button id="repeat-btn"><i class="fas fa-redo"></i></button>
+                <audio id="myAudio" src="tono.mp3"></audio>
+            </div>
            
           
             <button id="toggleButton"class="toggle-button"> <i class="fas fa-music"></i>Mostrar Música</button>
@@ -42,24 +49,12 @@
                     <button id="search-btn"><i class="fas fa-search"></i></button>
                 </div>
 
-
-
                <div class="playlist" id="playlist"></div>
             </div>
         </div>  
- <div class="controls">
-                <button id="prev-btn"><i class="fas fa-step-backward"></i></button>
-                <button id="play-btn"><i class="fas fa-play"></i></button>
-                <button id="next-btn"><i class="fas fa-step-forward"></i></button>
-                <button id="shuffle-btn"><i class="fas fa-random"></i></button>
-                <button id="repeat-btn"><i class="fas fa-redo"></i></button>
-                <audio id="myAudio" src="tono.mp3"></audio>
-            </div>
-
 
     </div>
    
-
     <div class="status-doyo status-online" id="statusDot">
         <spa id="statusText"></spa> 
     </div>
